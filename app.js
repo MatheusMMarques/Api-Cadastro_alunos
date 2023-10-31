@@ -20,7 +20,7 @@ const options = {
     },
     servers: [
       {
-        url: 'https://api-cadastro-alunos-19700570991d.herokuapp.com/api-docs/',
+        url: 'https://api-cadastro-alunos-19700570991d.herokuapp.com',
       },
     ],
   },
