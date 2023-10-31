@@ -2,6 +2,8 @@ const express = require('express');
 const mysql = require('mysql');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 
 const swaggerJSDoc = require('swagger-jsdoc');
@@ -18,7 +20,7 @@ const options = {
     },
     servers: [
       {
-        url: 'http://localhost:3000',
+        url: 'https://api-cadastro-alunos-19700570991d.herokuapp.com',
       },
     ],
   },
