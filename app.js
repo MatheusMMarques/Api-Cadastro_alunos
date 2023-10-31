@@ -107,7 +107,9 @@ app.post('/cadastro-aluno', (req, res) => {
     // Rota para a documentação Swagger
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerSpec));
 
-app.listen(3000, () => {
-  console.log('API está executando na porta 3000');
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log(`API está executando na porta ${port}`);
 });
+
 
